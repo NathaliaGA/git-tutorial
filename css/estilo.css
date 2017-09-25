@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:'Nunito', sans-serif  
+}
+
+.header{
+    background-color: #C1CFDA;
+    text-align:left;
+    padding: 15px;
+    font-family:'Nunito', sans-serif;
+}
+
+.imagem-perfil{
+    width: 350px;
+}
+
+.footer{
+    background-color:#696969;
+    padding: 10px;
+    text-align: center;  
+}
