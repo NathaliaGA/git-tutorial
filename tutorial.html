@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Tutorial Git GitHub </title>
+        <link rel="icon" href="img/github-logo.png">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Merienda+One|Nunito" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header"> 
+            <img class="imagem-perfil" src="img/github.png" alt="Logo GitHub">
+              <h1>Tutorial para Git </h1>
+              <nav class="navegacao">
+                    <ul class="navegacao-list">            
+                        <li class="navegacao-list-item"> <a href="#oquegithub" target="_self"> O que é GitHub? </a></li>
+                        <li class="navegacao-list-item"> <a href="#pqimportante" target="_self"> Por que é importante? </a></li>
+                        <li class="navegacao-list-item"> <a href="#comandosbasicos" target="_self"> Comandos básicos </a></li>                                     
+                   </ul>
+                </nav>
+            <div>       
+            <h3 id="oquegithub"> O que é GitHub? </h3>
+            <p> É um sistema open source de controle de versão de código, criado pelo mesmo desenvolvedor do Linux.
+Com o GIT podemos desenvolver projetos colaborativos, onde outras pessoas podem trabalhar simultaneamente no mesmo código sem riscos de perdermos nada do trabalho.</p>
+
+        <div>     
+            <h3 id="pqimportante"> Por que é importante? </h3>
+            <p> 1. Organização - Porque você não vai lembrar o que mudou no projeto, o Git cria uma timeline com tudo que aconteceu desde o início do projeto)
+2. Projetos com várias pessoas - Evita o “final_valendo_valendo2_oficial” Ajuda trabalho em equipe ( entender o que foi feito, onde parou, quem fez o que)
+3. Segurança - Se algo der errado, pode voltar para versão anterior (ctrl z da vida!)
+</p>
+         <div>       
+            <h3 id="comandosbasicos"> Comandos básicos </h3>
+            <ul>
+                <li> ls - LISTAR (ele traz uma lista de tudo o que está naquela pasta - documentos, outras pastas, etc) </li>
+                <li> pwd- Present working directory (onde estou?) Ele traz todo o caminho onde você está (em que pasta e onde essa pasta fica)</li>
+                <li> cd - change directory (use para se locomover entre as pastas) </li>
+                <li> cd ~ - volta liara a raiz </li>
+                <li> cd . - volta uma liasta acima </li>
+                <li> cd nome-da-liasta - liara entrar em uma pasta (você precisa conseguir enxergar ela quando listar os arquivos)</li>
+            </ul>    
+         </div>
+
+         <div>  
+             <h3> Comandos que mais vamos usar </h3>
+             <ul>   
+                 <li>git init - avisa o git para ficar de olho na pasta</li>
+                 <li>git status - nos mostra o que foi modificado, adicionado, ou deletado da pasta</li>
+                 <li>git add nome-do-arquivo.html - vamos colocar na caixinha essa versão do arquivo</li>
+                 <li>git add . - vamos colocar na caixinha todos os arquivos</li>
+                 <li>git commit -m “inclui botão vermelho” - vamos colocar a etiqueta na caixinha</li>
+                 <li>git log - mostra a timeline do nosso projeto com todos os commits que fizemos</li>
+                 <li>git checkout -- arquivo.txt- para voltar para a versão do último commit </li>
+                 <li>git branch nome-do-branch - para criar um branch (um espacinho separado para trabalharmos, e depois que estiver tudo lindo, juntamos na nossa master novamente)  </li>
+                 <li>git checkout nome-do-branch - para trocarmos de branch (antes nós só criamos o branch!)</li>
+                 <li>git merge nome-do-branch - para juntar o nosso branch com nosso projeto principal</li>
+             </ul>
+         </div>
+         <div>  
+             <h2> Usando o git no terminal</h2>
+             <h3> Como saber se o GIT está instalado?</h3>
+             <p> Digite git na linha de comando, e várias instruções e sugestões do git devem aparecer.</p>
+         </div>
+         <div>  
+             <h3> Vamos criar nosso repositório </h3>
+             <h2>Profile > Repositories > New </h2>
+             <p>Preencher os dados e criar (repare: repositório segue o padrão do Github, que será o endereço do Github + seu usuário + nome do repositório)</p>
+             <ul>
+                 <li>git config --global user.name “Exemplo1" </li>
+                 <li>git config --global user.email “exemplo1@gmail.com" </li>
+              </ul>
+         </div>
+
+         <div>
+             <h3> Vamos colocar nosso projeto no github via terminal</h3>
+             <h4> Comandos que mais vamos usar: </h4>
+
+             <ul>   
+                 <li>git remote add origin https://github.com/apdsrocha/try_git.git - para indicar em qual repositório vamos colocar nosso projeto</li>
+                 <li>git push origin master - “empurrar” nosso projeto para a nuvem</li>
+                 <li>git pull origin master - “puxar” o projeto para nossa maquina, carregar as mudanças dos colegas que alteraram</li>
+                 <li>git clone endereco-do-projeto-la-no-github.git - copia todos os arquivos do projeto para a nossa máquina</li>
+            </ul>
+         </div>
+      
+ <footer class="footer">    
+          <p> by Nathalia Apolinário 2017</p>
+    </footer>       
+
+    </body>
+</html>
